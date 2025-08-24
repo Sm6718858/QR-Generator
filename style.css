@@ -1,46 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    height: 700px;
-    width: 700px;
-    background-color: black;
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #23293d);
 }
-.container{
-    background-color: yellow;
-    margin-top: 200px;
-    margin-left: 150px;
-    margin-right: 150px;
-    height: 400px;
-    border: 2px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 20px;
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-.qrImage{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.container:hover {
+  transform: scale(1.02);
 }
-.container h2{
-    color: red;
-    padding: 10px;
-    font-weight: 900;
+
+.container h2 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
-.container input{
-    height: 20px;
-    margin-top: 5px;
-    border: 1px solid black;
+
+.container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
 }
-.container button{
-    margin-top: 10px;
-    background-color: blue;
-    padding: 3.5px;
-    color: white;
-    font-weight: 900;
-    padding: 5px;
-    border-radius: 5px;
+
+.container input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
+}
+
+.qrImage {
+  margin: 20px 0;
+}
+
+.qrImage img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+  padding: 8px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.container button {
+  width: 100%;
+  background: linear-gradient(135deg, #4a90e2, #007bff);
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  transform: translateY(-2px);
+}
+
+.container button:active {
+  transform: translateY(0);
 }

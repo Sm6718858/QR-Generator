@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="box">
-        <div class="container">
-            <h2>Enter Text or URL</h2>
-            <input type="text" placeholder="text or url" id="qrText">
-            <div class="qrImage">
-                <img id="qrCode" src="" alt="QR Code will appear here" style="display: none;">
-            </div>
-            <button id="generateBtn">Generate QR</button>
-        </div>
+  <div class="container">
+    <h2>Enter Text or URL</h2>
+    <input type="text" placeholder="Enter text or URL" id="qrText">
+    <div class="qrImage">
+      <img id="qrCode" src="" alt="QR Code will appear here" style="display: none;">
     </div>
-    <script src="script.js"></script>
+    <button id="generateBtn">Generate QR</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
